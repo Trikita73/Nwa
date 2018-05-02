@@ -13,7 +13,7 @@
 	<div class="container_c">
 		<?php include "box/db.php";
 
-			$result = mysql_query("INSERT INTO products (title,article,price) VALUES ('$_POST[title]','$_POST[article]','$_POST[price]')");
+			$result = mysql_query("INSERT INTO prod (title,article,price) VALUES ('$_POST[title]','$_POST[article]','$_POST[price]')");
 
 			if($result == true)
 			{

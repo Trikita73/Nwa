@@ -13,7 +13,7 @@
 	<div class="container_c">
 		<?php include "box/db.php"; 
 
-			$result = mysql_query("UPDATE products SET title='$_POST[title]',article='$_POST[article]',price='$_POST[price]' WHERE id='$_GET[id]'");
+			$result = mysql_query("UPDATE prod SET title='$_POST[title]',article='$_POST[article]',price='$_POST[price]' WHERE id='$_GET[id]'");
 
 			if($result == true)
 			{

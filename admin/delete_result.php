@@ -12,8 +12,8 @@
 	
 	<div class="container_c">
 		<?php include "box/db.php";
-		
-			$result= mysql_query("DELETE FROM products WHERE id='$_POST[id]'");
+
+			$result= mysql_query("DELETE FROM prod WHERE id='$_POST[id]'");
 
 			if($result == true)
 			{

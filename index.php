@@ -18,7 +18,7 @@
 	<div class="container_c">
 		<?php include "box/db.php";
 
-		$result = mysql_query("SELECT * FROM products");
+		$result = mysql_query("SELECT * FROM prod");
 		while($myrow = mysql_fetch_array($result))
 		{
 			echo <<<TABLE

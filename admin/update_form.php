@@ -12,8 +12,8 @@
 	
 	<div class="container_c">
 		<?php include "box/db.php";
-		
-		$result = mysql_query("SELECT * FROM products $_GET[type] WHERE id='$_POST[id]'");
+
+		$result = mysql_query("SELECT * FROM prod $_GET[type] WHERE id='$_POST[id]'");
 		$myrow = mysql_fetch_array($result);
 
 		?>
