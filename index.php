@@ -18,11 +18,16 @@
 	<div class="container_c">
 		<?php include "box/db.php";
 
-		$result = mysql_query("SELECT * FROM prod");
+		$result = mysql_query("SELECT * FROM products");
 		while($myrow = mysql_fetch_array($result))
 		{
 			echo <<<TABLE
 			<table class="product">
+				<tr class="products">
+					<th class="cont_product">ID:</th>
+					<td>$myrow[id]</td>
+				</tr>
+
 				<tr class="products">
 					<th class="cont_product">Название товара:</th>
 					<td>$myrow[title]</td>
@@ -37,17 +42,10 @@
 					<th class="cont_product">Цена:</th>
 					<td>$myrow[price]$</td>
 				</tr> 
-				<tr class="products">
-					<th class="cont_product">Цена:</th>
-					<td>$myrow[price]$</td>
-				</tr>
 			</table>
 TABLE;
 		}
 		?>
-
-
-
 	</div>
 </div>
 	<?php include "box/footer.php"; ?>

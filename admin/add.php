@@ -12,8 +12,6 @@
 	
 	<div class="container_c">
 		<form action="add_result.php?type=<?php echo $_GET['type'] ?>" method="post">
-			<span>ID</span></br>
-			<input type="int" name="id" size="10"></br></br>
 			<span>Название</span></br>
 			<input type="text" name="title" size="50"></br></br>
 			<span>Описание</span></br>
@@ -24,10 +22,6 @@
 		</form>
 	</div>
 </div>
-<footer>
-	<div class="footer_cnt">
-		<p class="fnt">Copyright</p>
-	</div>
-</footer>
+	<?php include "box/footer.php"; ?>
 </body>
 </html>

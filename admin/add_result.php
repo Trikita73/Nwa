@@ -11,27 +11,22 @@
 	<?php include "box/menu.php"; ?>
 	
 	<div class="container_c">
-		<?php
-		include "box/db.php";
+		<?php include "box/db.php";
 
-		$result = mysql_query("INSERT INTO prod (title,article,price) VALUES ('$_POST[title]','$_POST[article]','$_POST[price]')");
+			$result = mysql_query("INSERT INTO products (title,article,price) VALUES ('$_POST[title]','$_POST[article]','$_POST[price]')");
 
-		if($result == true)
-		{
-			echo "Данные добавлены!";
-		}
-		else 
-		{
-			echo "Ошибка!";
-		}
+			if($result == true)
+			{
+				echo "Данные добавлены!";
+			}
+			else 
+			{
+				echo "Ошибка!";
+			}
 
 		?>
 	</div>
 </div>
-<footer>
-	<div class="footer_cnt">
-		<p class="fnt">Copyright</p>
-	</div>
-</footer>
+	<?php include "box/footer.php"; ?>
 </body>
 </html>

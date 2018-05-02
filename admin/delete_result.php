@@ -12,24 +12,21 @@
 	
 	<div class="container_c">
 		<?php include "box/db.php";
-		$result= mysql_query("DELETE FROM prod WHERE id='$_POST[id]'");
+		
+			$result= mysql_query("DELETE FROM products WHERE id='$_POST[id]'");
 
-		if($result == true)
-		{
-			echo "Информация товара была успешно удалена!";
-		}
-		else 
-		{
-			echo "Товар не был удален!";
-		}
+			if($result == true)
+			{
+				echo "Информация товара была успешно удалена!";
+			}
+			else 
+			{
+				echo "Товар не был удален!";
+			}
 
 		?>
 	</div>
 </div>
-<footer>
-	<div class="footer_cnt">
-		<p class="fnt">Copyright</p>
-	</div>
-</footer>
+	<?php include "box/footer.php"; ?>
 </body>
 </html>

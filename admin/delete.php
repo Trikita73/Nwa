@@ -18,10 +18,6 @@
 		</form>
 	</div>
 </div>
-<footer>
-	<div class="footer_cnt">
-		<p class="fnt">Copyright</p>
-	</div>
-</footer>
+	<?php include "box/footer.php"; ?>	
 </body>
 </html>
